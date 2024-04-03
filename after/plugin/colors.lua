@@ -7,4 +7,8 @@ function ColorMyPencils(color)
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
+require("rose-pine").setup({
+    disable_italics = true,
+})
+
 ColorMyPencils()
