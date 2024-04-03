@@ -13,3 +13,12 @@ Install mingw64, add C:\mingw64\bin to path
 
 Both:
 Install node.js
+
+
+I haven't figured out enough about nvim to know why packer.lua doesn't seem to be sourced when nvim initializes, so I have solved that issue by
+
+1. Navigate to packer.lua
+2. :so
+3. :PackerSync
+
+Once packer syncs the plugins, everything should start working hopefully
