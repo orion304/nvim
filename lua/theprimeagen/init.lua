@@ -1,11 +1,16 @@
 require("theprimeagen.set")
 require("theprimeagen.remap")
-require("theprimeagen.packer")
+
+if not vim.g.vscode then
+    require("theprimeagen.packer")
+end
 
 -- Define a function to save changes and copy the file to the desired location
 function SaveAndCopy()
-    -- Save changes
-    vim.cmd(":w")
+    -- Save changes if this isn't running in VSCode
+    if not vim.g.vscode then
+        vim.cmd(":w")
+    end
 
     -- Get the current file path
     local current_file = vim.fn.expand('%:p')
@@ -23,4 +28,3 @@ end
 
 -- Define a custom command to call the function
 vim.cmd(":command! SaveAndCopy lua SaveAndCopy()")
-
