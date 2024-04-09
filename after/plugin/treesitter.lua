@@ -23,5 +23,6 @@ if not vim.g.vscode then
     }
 
     vim.treesitter.language.register("html", "aspx")
+    vim.treesitter.language.register("html", "ascx")
 
 end

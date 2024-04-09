@@ -19,3 +19,5 @@ vim.keymap.set("n", "<leader>o", "o<Esc>")
 vim.keymap.set("n", "<leader>O", "O<Esc>")
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
+
+vim.keymap.set("n", "<leader>/", ":noh<CR>")
