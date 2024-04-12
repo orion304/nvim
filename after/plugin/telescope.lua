@@ -6,5 +6,6 @@ if not vim.g.vscode then
     vim.keymap.set('n', '<leader>ps', function()
         builtin.grep_string({ search = vim.fn.input("Grep > ") });
     end)
+    vim.keymap.set('n', '<leader>bf', builtin.buffers, {})
 
 end

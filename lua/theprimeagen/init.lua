@@ -13,14 +13,16 @@ function SaveAndCopy()
     end
 
     local kcdc_test_path = '\\\\pds-web02\\PDS\\Vista\\KCDC\\KCDCTEST\\Web\\'
+    local bhs_test_path = '\\\\hostweb2\\PDS\\Vista\\BHS\\BHSDEVL\\Web\\'
     local cpu_test_path = '\\\\pds-web03\\PDS\\Vista\\CPU\\CPUTEST\\Web\\'
-    local remote_path = cpu_test_path
+    local remote_path = bhs_test_path
 
     -- Get the current file path
     local current_file = vim.fn.expand('%:p')
+    current_file = current_file:gsub('/', '\\')
 
     -- Define the destination path relative to the current file
-    local destination = current_file:gsub('/', '\\')
+    local destination = current_file
     destination = destination:gsub('C:\\source\\repos\\technical%-consulting%-vista%-web\\', remote_path)
 
     -- Print the command

@@ -42,6 +42,11 @@ if not vim.g.vscode then
 
         use 'lewis6991/gitsigns.nvim'
 
+        use {
+            'nvim-lualine/lualine.nvim',
+            requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        }
+
     end)
 
 end
