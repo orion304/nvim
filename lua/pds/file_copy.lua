@@ -1,10 +1,11 @@
 local conkc_test_path = '\\\\qa-web\\PDS\\vista\\conkc\\Web\\'
+local conkyng_test_path = '\\\\qa-web\\PDS\\vista\\con73kyng\\Web\\'
 local pacy_test_path = '\\\\hostweb2\\PDS\\vista\\PACY\\PACYTEST\\Web\\'
 local kcdc_test_path = '\\\\pds-web02\\PDS\\Vista\\KCDC\\KCDCTEST\\Web\\'
 local kcdc_prod_path = '\\\\pds-web02\\PDS\\Vista\\KCDC\\KCDCPROD\\Web\\'
 local bhs_test_path = '\\\\hostweb2\\PDS\\Vista\\BHS\\BHSDEVL\\Web\\'
 local cpu_test_path = '\\\\pds-web03\\PDS\\Vista\\CPU\\CPUTEST\\Web\\'
-local remote_path = kcdc_prod_path
+local remote_path = pacy_test_path
 
 function GetCurrentFileAndDestinationPath()
   -- Get the current file path
